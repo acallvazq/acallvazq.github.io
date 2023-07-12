@@ -48,3 +48,63 @@ div.circulos {
 #fila3 {
     background-color:rgb(145, 247, 114)
 }
+
+#fila1 > div.rojo {
+    cursor: wait;
+}
+
+#fila1 > div.verde {
+    cursor: pointer;
+}
+
+#fila1 > div.azul {
+    cursor: grab;
+}
+
+#fila1 > div.amarillo {
+    cursor: alias;
+}
+
+#fila1 > div.morado {
+    cursor: all-scroll;
+}
+
+#fila2 > div.rojo {
+    cursor: cell;
+}
+
+#fila2 > div.verde {
+    cursor: crosshair;
+}
+
+#fila2 > div.azul {
+    cursor: default;
+}
+
+#fila2 > div.amarillo {
+    cursor: zoom-in;
+}
+
+#fila2 > div.morado {
+    cursor: zoom-out;
+}
+
+#fila3 > div.rojo {
+    cursor: context-menu;
+}
+
+#fila3 > div.verde {
+    cursor: copy;
+}
+
+#fila3 > div.azul {
+    cursor: progress;
+}
+
+#fila3 > div.amarillo {
+    cursor: ew-resize;
+}
+
+#fila3 > div.morado {
+    cursor: none;
+}
