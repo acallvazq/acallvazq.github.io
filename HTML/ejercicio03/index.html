@@ -51,11 +51,8 @@
             <option value="andorra">Andorra</option>
         </select><br><br>
 
-        <label for="ccoment">Sobre mi</label><br>
-        <textarea id="ccoment" name="ccoment" rows="6" cols="50">Escriba aqui...</textarea><br><br>
-
         <label for="ccuenta">Tipo de cuenta</label><br>
-        <input type="radio" id="ccuenta" name="ccuenta" value="gratuita" title="Hola">Gratuita<br>
+        <input type="radio" id="ccuenta" name="ccuenta" value="gratuita" title="Hola" checked>Gratuita<br>
         <input type="radio" id="ccuenta" name="ccuenta" value="basica">Basica<br>
         <input type="radio" id="ccuenta" name="ccuenta" value="premium">Premium<br>
 
@@ -70,6 +67,15 @@
         <div id="premium" class="informacion">
             La cuenta premium te da acceso ilimitado a todos los servicios de la plataforma por un precio justo y competitivo.
         </div>
+
+        <label for="ccoment">Sobre mi</label><br>
+        <textarea id="ccoment" name="ccoment" rows="6" cols="50" required placeholder="Escriba aqui..."></textarea><br><br>
+
+        <label for="cperfil">Foto de perfil</label><br>
+        <input type="file" id="cperfil" name="cperfil" accept="image/*" required><br><br>
+
+        <label for="cCV">Curriculum vitae</label><br>
+        <input type="file" id="cCV" name="cCV" accept="application/pdf" required><br><br>
 
         <input class="button button1" type="reset" value="Reset">
         <input class="button button1" type="submit" value="Enviar">
