@@ -6,6 +6,7 @@
                  "fila3";
     border-collapse: collapse;
     width: 330px;
+    margin-bottom: 50px;
 }
 
 #fila1 {
@@ -143,11 +144,11 @@ div.circulos {
     border: 3px groove yellow;
 }
 
-input[type=checkbox] {
+input[type=checkbox], input[type=radio] {
     display: none;
 }
 
-input[type=checkbox]:checked + .columna {
+input[type=checkbox]:checked + .columna, input[type=radio]:checked + .columna {
     transform: rotate(45deg);
 
 }
@@ -155,3 +156,5 @@ input[type=checkbox]:checked + .columna {
 .columna:hover{
     transform: translateY(-10px);
 }
+
+
