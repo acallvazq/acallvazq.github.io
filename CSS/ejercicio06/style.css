@@ -157,3 +157,7 @@ div.circulos {
 .rotado {
     transform: rotate(45deg);
 }
+
+.rotado:hover{
+    transform: rotate(0);
+}
