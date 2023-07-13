@@ -125,22 +125,22 @@ div.circulos {
 
 .verde {
     background-color: green;
-    border: 3px solid red;
+    border: 3px dashed red;
 }
 
 .azul {
     background-color: blue;
-    border: 3px solid green;
+    border: 3px double green;
 }
 
 .amarillo {
     background-color: yellow;
-    border: 3px solid blue;
+    border: 3px dotted blue;
 }
 
 .morado {
     background-color: violet;
-    border: 3px solid yellow;
+    border: 3px groove yellow;
 }
 
 
