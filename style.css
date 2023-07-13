@@ -1,5 +1,6 @@
 *{
     margin: 0 auto;
+    padding: 0;
 }
 
 body{
@@ -85,4 +86,5 @@ ol{
 li {
     list-style-position: inside;
 }
+ 
 
