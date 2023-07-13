@@ -151,3 +151,7 @@ input[type=checkbox]:checked + .columna {
     transform: rotate(45deg);
 
 }
+
+.columna:hover{
+    transform: translateY(-10px);
+}
