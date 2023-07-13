@@ -51,6 +51,10 @@ td.fila3 {
 
 }
 
+td {
+    padding: 0;
+}
+
 .fila1 > div.rojo {
     cursor: wait;
 }
