@@ -1,0 +1,10 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#contenido {
+    height: 200px;
+    width: 200px;
+    margin: 20px;
+}
