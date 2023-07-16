@@ -1,0 +1,98 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-image: url("images/fondo.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+#sistema-solar {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    perspective: 1000px;
+}
+
+#sol {
+    position:absolute;
+    top: 0;
+    width: 100vh;
+    height: 100vh;
+    transform: translateX(-60%);
+    background: radial-gradient(ellipse at center, #FFDB00 50%, transparent 72%);
+}
+
+.planetas {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    border-radius: 50%;
+    
+}
+
+#mercurio {  
+    width: 20px;
+    height: 20px;
+    margin-left: -20vw;    
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(230,92,92,1) 0%, rgba(121,9,9,1) 30%, rgba(2,0,36,1) 80%);
+}
+
+#venus {
+    width: 40px;
+    height: 40px;
+    margin-left: -15vw;
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgb(214, 150, 110) 0%, rgba(156,68,13,1) 40%, rgba(2,0,36,1) 90%);
+}
+
+#tierra {
+    width: 40px;
+    height: 40px;
+    margin-left: -10vw;
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgb(127, 255, 115) 0%, rgba(13,138,156,1) 40%, rgba(2,0,36,1) 90%);   
+}
+
+#marte {  
+    width: 20px;
+    height: 20px;
+    margin-left: -5vw;    
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(228,161,125,1) 0%, rgba(162,95,0,1) 44%, rgba(2,0,36,1) 94%);
+}
+
+#jupiter {
+    width: 80px;
+    height: 80px;
+    margin-left: 0vw;
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgb(214, 150, 110) 0%, rgba(156,68,13,1) 40%, rgba(2,0,36,1) 90%);
+}
+
+#saturno {
+    width: 80px;
+    height: 80px;
+    margin-left: 5vw;
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgb(214, 150, 110) 0%, rgba(156,68,13,1) 40%, rgba(2,0,36,1) 90%);
+}
+
+#urano{
+    width: 40px;
+    height: 40px;
+    margin-left: 10vw;
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgb(127, 255, 115) 0%, rgba(13,138,156,1) 40%, rgba(2,0,36,1) 90%);   
+}
+
+#neptuno{
+    width: 40px;
+    height: 40px;
+    margin-left: 15vw;
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgb(127, 255, 115) 0%, rgba(13,138,156,1) 40%, rgba(2,0,36,1) 90%);   
+}
