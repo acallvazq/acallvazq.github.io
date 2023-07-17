@@ -8,11 +8,16 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet"> 
-    <title>Ejercicio 1</title>
+    <title>Ejercicio 5</title>
 </head>
 <body>
     <div id="contenido"></div>
     <input type="text" id="segundos" placeholder="Cuenta atras (seg)" oninput="actualizaSegundos(this.value)" required/>
-    <button id="inicio">Iniciar</button>
+    <button id="inicio" onclick="cuentaAtras()">Iniciar</button>
+    <div id="cajaMensaje">
+        <h2>ALARMA</h2>
+        <img src="images/clock.png" alt="clock" style="margin-top:30px;height:100px;">
+        <button onclick="detenerAlarma()">Detener</button>
+    </div>
 </body>
 </html>

@@ -34,4 +34,31 @@ function actualizaSegundos(pSegundos) {
     segundos = (segundos < 10) ? "0" + segundos : segundos;
 
     contenido.innerHTML = hora + ":" + minutos + ":" + segundos;
+
+}
+
+function cuentaAtras(segundos){
+    var segundos = document.getElementById("segundos").value;
+    document.getElementById("segundos").value = "";
+    var temporizador;
+    actualizaSegundos(segundos);
+    
+    temporizador = setInterval(function() {
+        if(segundos > 0){
+            actualizaSegundos(segundos);
+            segundos--;
+        }else {
+            document.getElementById("cajaMensaje").style.display = "block";
+            clearInterval(temporizador);
+        }      
+
+    }, 1000);
+
+}
+
+function detenerAlarma(){
+    document.getElementById("cajaMensaje").style.display = "none";
+    actualizaSegundos(0);
+
+
 }

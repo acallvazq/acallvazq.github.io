@@ -57,3 +57,22 @@ button:hover {
     background-color: white;
 }
 
+#cajaMensaje {
+    display: none;
+    position: fixed;
+    background-color: rgb(29, 26, 26);
+    top: 60%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    height: 40vh;
+    width: 60vw;
+    border: none;
+    font: normal 30px Helvetica, sans-serif;
+    color: #ff9900;
+    text-align: center;
+    border-radius: 10px;
+    padding: 20px;
+    z-index: 1;
+    
+}
+
