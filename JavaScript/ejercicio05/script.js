@@ -1,4 +1,5 @@
 window.onload = function() {
+    var audio = document.getElementById("audio");
     var contenido = document.getElementById("contenido");
     var hora = "00";
     var minutos = "00";
@@ -38,9 +39,15 @@ function actualizaSegundos(pSegundos) {
 }
 
 function cuentaAtras(segundos){
-    var segundos = document.getElementById("segundos").value;
-    document.getElementById("segundos").value = "";
+    var entrada = document.getElementById("segundos");
+    var inicio = document.getElementById("inicio");
+
     var temporizador;
+    var segundos = entrada.value;
+    entrada.value = "";   
+
+    inicio.disabled = true;
+
     actualizaSegundos(segundos);
     
     temporizador = setInterval(function() {
@@ -48,17 +55,27 @@ function cuentaAtras(segundos){
             actualizaSegundos(segundos);
             segundos--;
         }else {
-            document.getElementById("cajaMensaje").style.display = "block";
+            sonarAlarma();
             clearInterval(temporizador);
+            document.getElementById("cajaMensaje").style.display = "block";         
         }      
-
-    }, 1000);
-
+    }, 1000);   
 }
 
 function detenerAlarma(){
+    var inicio = document.getElementById("inicio");
+
     document.getElementById("cajaMensaje").style.display = "none";
     actualizaSegundos(0);
+    detenerSonidoAlarma();
+    inicio.disabled = false;
+}
 
+function sonarAlarma(){
+    audio.play();
+}
 
+function detenerSonidoAlarma(){
+    audio.pause();
+    audio.currentTime = 0;
 }
