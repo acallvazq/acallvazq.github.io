@@ -1,6 +1,7 @@
 window.onload = function() {
     var audio = document.getElementById("audio");
     var contenido = document.getElementById("contenido");
+    var segundosOriginales;
     var hora = "00";
     var minutos = "00";
     var segundos = "00";
@@ -38,15 +39,19 @@ function actualizaSegundos(pSegundos) {
 
 }
 
-function cuentaAtras(segundos){
+function cuentaAtras(){
     var entrada = document.getElementById("segundos");
     var inicio = document.getElementById("inicio");
 
     var temporizador;
-    var segundos = entrada.value;
+    var psegundos = entrada.value;
+    segundosPosponer = psegundos;
+    console.log("segundosPosponer: " + segundosPosponer);
+    var segundos = psegundos;
     entrada.value = "";   
 
     inicio.disabled = true;
+    segundosPosponer = psegundos;
 
     actualizaSegundos(segundos);
     
@@ -69,6 +74,16 @@ function detenerAlarma(){
     actualizaSegundos(0);
     detenerSonidoAlarma();
     inicio.disabled = false;
+}
+
+function posponerAlarma(){
+    var inicio = document.getElementById("inicio");
+
+    document.getElementById("cajaMensaje").style.display = "none";
+    detenerSonidoAlarma();
+    inicio.disabled = true;
+
+    cuentaAtras(segundosPosponer);
 }
 
 function sonarAlarma(){
