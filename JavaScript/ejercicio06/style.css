@@ -1,0 +1,39 @@
+button {
+    cursor: pointer;
+    padding: 10px 30px;
+    background: transparent;
+    border: 1px solid rgb(95, 92, 92);
+    border-radius: 8px;
+    text-transform: uppercase;
+    color: rgb(95, 92, 92);
+    transition: ease-in-out 0.45s;
+}
+
+button:hover {
+    color: white;
+    background: rgb(95, 92, 92);
+}
+
+#inicio {
+    position: absolute;
+    top: 75%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    font-size: 24px;
+}
+
+#contenedor {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 10px;
+    justify-items: center;
+}
+
+img {
+    width: 200px;
+    height: 150px;
+    object-fit: cover;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+
+}
