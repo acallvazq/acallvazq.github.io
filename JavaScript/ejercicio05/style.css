@@ -19,16 +19,11 @@ body {
 }
 
 button {
-    position: absolute;
-    top: 75%;
-    left: 50%;
-    transform: translateX(-50%) translateY(-50%);
     cursor: pointer;
     padding: 10px 30px;
     background: transparent;
     border: 1px solid rgb(214, 214, 214);
     border-radius: 8px;
-    font-size: 24px;
     text-transform: uppercase;
     color: #ffff;
     transition: ease-in-out 0.45s;
@@ -38,6 +33,27 @@ button:hover {
     color: black;
     background: rgb(214, 214, 214);
 
+}
+
+button:disabled {
+    cursor: not-allowed;   
+    color: #ffff;
+    border: 1px solid rgb(214, 214, 214);
+}
+
+button:disabled:hover {
+    background: transparent;
+    cursor: not-allowed;   
+    color: #ffff;
+    border: 1px solid rgb(214, 214, 214);
+}
+
+#inicio {
+    position: absolute;
+    top: 75%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    font-size: 24px;
 }
 
 #segundos {
@@ -65,7 +81,7 @@ button:hover {
     left: 50%;
     transform: translateX(-50%) translateY(-50%);
     height: 40vh;
-    width: 60vw;
+    width: 400px;
     border: none;
     font: normal 30px Helvetica, sans-serif;
     color: #ff9900;
@@ -74,5 +90,17 @@ button:hover {
     padding: 20px;
     z-index: 1;
     
+}
+
+.contenedorBotones {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contenedorBotones > button {
+    font-size: 14px;
+    margin: 5px; 
+    margin-top: 4em;   
 }
 

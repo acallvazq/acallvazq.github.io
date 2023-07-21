@@ -44,6 +44,7 @@ function cuentaAtras(){
     var inicio = document.getElementById("inicio");
 
     var temporizador;
+    segundosOriginales = entrada.value;
     var psegundos = entrada.value;
     segundosPosponer = psegundos;
     console.log("segundosPosponer: " + segundosPosponer);
@@ -79,11 +80,13 @@ function detenerAlarma(){
 function posponerAlarma(){
     var inicio = document.getElementById("inicio");
 
+    inicio.disabled = true;
     document.getElementById("cajaMensaje").style.display = "none";
     detenerSonidoAlarma();
-    inicio.disabled = true;
-
-    cuentaAtras(segundosPosponer);
+    alert(segundosOriginales);
+    actualizaSegundos(segundosOriginales);
+    document.getElementById("segundos").value = segundosOriginales;
+    setTimeout(cuentaAtras(), 3000);
 }
 
 function sonarAlarma(){
