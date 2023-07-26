@@ -83,7 +83,6 @@ function posponerAlarma(){
     inicio.disabled = true;
     document.getElementById("cajaMensaje").style.display = "none";
     detenerSonidoAlarma();
-    alert(segundosOriginales);
     actualizaSegundos(segundosOriginales);
     document.getElementById("segundos").value = segundosOriginales;
     setTimeout(cuentaAtras(), 3000);
