@@ -5,7 +5,7 @@
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
     text-decoration: none;
-    overflow-x: hidden;
+        
 }
 
 body {
@@ -265,6 +265,9 @@ span{
 }
 
 @media screen and (max-width: 930px) {
+    body {
+        overflow-x: hidden;
+    }
     nav .hamb {
         display: initial;
     }
@@ -321,8 +324,7 @@ span{
         font-size: 14px;
     }
     nav .nav-list.open {
-        visibility: visible;
-        
+        visibility: visible;   
         right: 0;
     }
 
