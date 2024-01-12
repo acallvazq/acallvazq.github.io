@@ -264,6 +264,9 @@ span{
 }
 
 @media screen and (max-width: 930px) {
+    nav .nav-list{
+        display: hidden;
+    }
     nav .hamb {
         display: initial;
     }
