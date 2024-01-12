@@ -265,7 +265,7 @@ span{
 
 @media screen and (max-width: 930px) {
     nav .nav-list{
-        display: hidden;
+        display: none;
     }
     nav .hamb {
         display: initial;
@@ -299,6 +299,8 @@ span{
         backdrop-filter: blur(5px);
         z-index: 2;
         padding: 6% 9%;
+        display: block;
+
         transition: .3s right;
         border-radius: 10px;
     }
